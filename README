@@ -33,7 +33,11 @@ Requirements:
 Usage:
 ======
 
-Have a look at examples/prime_numbers.py
+Have a look at examples/prime_numbers.py ...
+
+To start the platform execute the start_platform.py script.
+
+Some configuration can be done in the Config.py file.
 
 
 Questions:
