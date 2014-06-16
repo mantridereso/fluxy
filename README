@@ -5,16 +5,18 @@ FLUXY is a lightweight Python Multi Agent Framework. It abstracts from the concr
 more or less any message oriented middleware can easily be used with it. Just extend the "abstract"
 MTL/MTLActor classes. For the moment it comes with a binding to ZeroMQ.
 
-Being an Organization Centric MAS solution FLUXY is inspired by MaDKit.
+Being inspired by MaDKit FLUXY is an Organization Centric MAS solution (OCMAS).
 Similar to MaDKit it implements the Agent/Group/Role (AGR) model.
-Any number of agents can be members of any number of groups where they can have an arbitrary of roles in.
+Any number of agents can be members of any number of groups where they can have an arbitrary of roles within.
 
-FLUXY also enables a consequently asynchronous coding style.
+FLUXY also enables a consequently asynchronous programming style (Closures as callbacks and so on).
 
-Agents in FLUXY have identities referring to the roles the agents play in groups. Associated with each identity of
+Agents in FLUXY have Identities referring to the roles the agents play in groups. Associated with each Identity of
 an agent is a Behaviour which consists of ActionPatterns and ReactionPatterns.
 
 There are InformMessages (one-way messages) and Request-/RequestReplyMessages (request-respond messaging) in FLUXY.
+You can derive application specific message classes from these base classes and register them at the Message Parser.
+Currently FIPA-ACL message classes are not implemented yet. However, this will be done as soon as I find some time ;)
 
 There is a minimal internal DSL for the messaging use cases that should help to keep the code readable.
 
@@ -25,7 +27,7 @@ Requirements:
 ============
 
 - Python 2.7
-- ZeroMQ / pyzmq
+(- ZeroMQ / pyzmq)
 
 
 Usage:
