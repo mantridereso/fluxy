@@ -1,1 +1,37 @@
-This file was created by IntelliJ IDEA 12.1.6 for binding GitHub repository
+Hello :)
+=======
+
+FLUXY is a lightweight Python Multi Agent Framework. It abstracts from the concrete message transport layer, thus
+more or less any message oriented middleware can easily be used with it. Just extend the "abstract"
+MTL/MTLActor classes. For the moment it comes with a binding to ZeroMQ.
+
+Being an Organization Centric MAS solution FLUXY is inspired by MaDKit.
+Similar to MaDKit it implements the Agent/Group/Role (AGR) model.
+Any number of agents can be members of any number of groups where they can have an arbitrary of roles in.
+
+FLUXY also enables a consequently asynchronous coding style.
+
+Agents in FLUXY have identities referring to the roles the agents play in groups. Associated with each identity of
+an agent is a Behaviour which consists of ActionPatterns and ReactionPatterns.
+
+There are InformMessages (one-way messages) and Request-/RequestReplyMessages (request-respond messaging) in FLUXY.
+
+There is a minimal internal DSL for the messaging use cases that should help to keep the code readable.
+
+FLUXY is still in ALPHA-stage.
+
+
+Requirements:
+============
+
+- Python 2.7
+- ZeroMQ / pyzmq
+
+
+Usage:
+======
+
+Have a look at examples/prime_numbers.py
+
+
+
